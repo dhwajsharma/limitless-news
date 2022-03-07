@@ -25,12 +25,17 @@ function App() {
 
   useEffect(() => {
     newsApi();
-  }, [newsResults, category]);
+  }, [newsResults, loadMore, category]);
 
   return (
     <div className="app">
       <Navbar setCategory={setCategory} />
-      <NewsContent newsArray={newsArray} newsResults={newsResults} />
+      <NewsContent
+        newsArray={newsArray}
+        loadMore={loadMore}
+        setLoadMore={setLoadMore}
+        newsResults={newsResults}
+      />
       <Footer />
     </div>
   );
