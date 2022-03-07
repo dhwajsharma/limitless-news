@@ -1,0 +1,16 @@
+.navbar {
+  height: 71px;
+  background-color: #242526;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo {
+  height: 80%;
+  cursor: pointer;
+}
+
+.navbar__icon {
+  flex: 0.48;
+}
